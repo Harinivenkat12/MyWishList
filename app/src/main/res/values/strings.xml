@@ -3,4 +3,5 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_display_wishes">DisplayWishes</string>
     <string name="title_activity_wish_detail">wish_detail</string>
+    <string name="delete_button">Delete</string>
 </resources>

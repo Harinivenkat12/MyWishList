@@ -53,11 +53,13 @@ public class DisplayWishes extends AppCompatActivity {
             String title = wish.get(i).getTitle();
             String content = wish.get(i).getContent();
             String recordDate = wish.get(i).getRecordDate();
+            int mId=wish.get(i).getItemId();
 
             MyWish wishObj = new MyWish();
             wishObj.setContent(content);
             wishObj.setRecordDate(recordDate);
             wishObj.setTitle(title);
+            wishObj.setItemId(mId);
 
             myWish.add(wishObj);
 
@@ -142,11 +144,13 @@ public class DisplayWishes extends AppCompatActivity {
                     String text= finalHolder.myWishb.getContent().toString();
                     String dateText= finalHolder.myWishb.getRecordDate().toString();
                     String title= finalHolder.myWishb.getTitle().toString();
+                    int id= finalHolder.myWishb.getItemId();
 
                     Intent i= new Intent(DisplayWishes.this, WishDetail.class);
                     i.putExtra("context",text);
                     i.putExtra("date",dateText);
                     i.putExtra("title",title);
+                    i.putExtra("id",id);
 
                     startActivity(i);
                 }
@@ -160,6 +164,7 @@ public class DisplayWishes extends AppCompatActivity {
 
             MyWish myWishb;
             TextView mTitle;
+            int mId;
             TextView mContent;
             TextView mDate;
         }

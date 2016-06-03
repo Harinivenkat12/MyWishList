@@ -26,19 +26,32 @@
         android:layout_width="wrap_content"
         android:id="@+id/dateCreatedId"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="25dp"
+        android:layout_marginRight="20dp"
         android:text="Created:"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:textStyle="italic"
-        android:layout_marginTop="85dp"
+        android:layout_marginTop="55dp"
         android:layout_below="@+id/wishHeadingId"
         android:layout_height="wrap_content" />
 
     <TextView
         android:layout_width="wrap_content"
         android:id="@+id/textContentId"
+        android:text="My wish.."
+        android:textSize="29dp"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/dateCreatedId"
         android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/deleteButton"
+        android:layout_below="@id/textContentId"
+        android:layout_marginTop="39dp"
+        android:text="@string/delete_button"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
         android:layout_height="wrap_content" />
 
 </RelativeLayout>
